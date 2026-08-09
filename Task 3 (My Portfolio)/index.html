@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Areebah — Frontend Engineer</title>
+<meta name="description" content="Portfolio of Areebah, a BSSE student and frontend engineer building real-time dashboards and role-based platforms.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="asphalt-texture" aria-hidden="true"></div>
+
+<!-- ===== NAV ===== -->
+<header class="nav" id="nav">
+  <a href="#top" class="nav__brand">
+    <span class="plate-chip">AB</span>
+    <span class="nav__brand-text">AREEBAH</span>
+  </a>
+  <nav class="nav__links">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a href="Areebah-Resume.pdf" class="nav__cta" id="Areebah-Resume.pdf">Résumé</a>
+  <button class="nav__burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+  </button>
+</header>
+
+<!-- lane divider -->
+<div class="lane-divider" aria-hidden="true"><div class="lane-divider__line"></div></div>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="top">
+  <div class="hero__left">
+    <p class="eyebrow">
+      <span class="sign-chip sign-chip--green">OPEN</span>
+      Available for internships
+    </p>
+    <h1 class="hero__title">
+      Building the<br>
+      interfaces that<br>
+      <span class="hero__title-hl">keep systems</span><br>
+      <span class="hero__title-hl">moving.</span>
+    </h1>
+    <p class="hero__sub">
+      I'm Areebah — a Software Engineering student who builds the frontend
+      for real-time dashboards and role-based platforms. Currently
+      shipping the web dashboard for IVVSP, a vehicle verification &amp;
+      surveillance system.
+    </p>
+    <div class="hero__actions">
+      <a href="#projects" class="btn btn--primary">View projects</a>
+      <a href="#contact" class="btn btn--ghost">Get in touch</a>
+    </div>
+    <ul class="hero__stack">
+      <li>React</li><li>Vite</li><li>Ant Design</li><li>Zustand</li><li>Firebase</li>
+    </ul>
+  </div>
+
+  <div class="hero__right">
+    <div class="plate-mount">
+      <div class="plate" id="plate">
+        <div class="plate__bolt plate__bolt--tl"></div>
+        <div class="plate__bolt plate__bolt--tr"></div>
+        <div class="plate__bolt plate__bolt--bl"></div>
+        <div class="plate__bolt plate__bolt--br"></div>
+        <span class="plate__region">UNIVERSITY OF LAHORE</span>
+        <span class="plate__name">AREEBAH</span>
+        <span class="plate__sub">FRONTEND · UI/UX · GRAPHIC DESIGNER</span>
+      </div>
+      <div class="plate__shadow"></div>
+    </div>
+    <span class="sticker sticker--1">ROLE-BASED&nbsp;AUTH</span>
+    <span class="sticker sticker--2">REAL-TIME&nbsp;UI</span>
+  </div>
+</section>
+
+<div class="lane-divider" aria-hidden="true"><div class="lane-divider__line"></div></div>
+
+<!-- ===== ABOUT ===== -->
+<section class="section" id="about">
+  <div class="section__head">
+    <span class="sign-badge">EXIT 01 — ABOUT</span>
+  </div>
+
+  <div class="about__grid">
+    <p class="about__lead">
+      I ended up specializing in the part of software people look at
+      under pressure — dashboards, live status views, and interfaces
+      that stay legible when the data won't sit still.
+    </p>
+
+    <div class="about__body">
+      <p>
+        My current focus is the web dashboard for <strong>IVVSP</strong>
+        (Intelligent Vehicle Verification &amp; Surveillance Platform), my
+        Final Year Project — built with React, Vite, Ant Design, and
+        Zustand, with role-based routing across super admin, zone admin,
+        and officer views, plus live visual simulations for verification
+        events. I built it against a mock auth layer so I could move
+        independently while the backend came together in parallel.
+      </p>
+      <p>
+        Before that, coursework took me through native Android — a
+        multi-screen Java app with bottom navigation and intent-based
+        data passing, and a Firebase-backed patient registration app with
+        real authentication and Firestore.
+      </p>
+      <p>
+        Outside of coursework, I've also designed and marketed a small
+        handcrafted jewelry concept rooted in South Asian artisan
+        techniques — mostly to keep the "build something people want"
+        muscle exercised alongside the engineering side.
+      </p>
+    </div>
+
+    <div class="inspection-tag">
+      <div class="inspection-tag__top">
+        <span>VEHICLE&nbsp;INSPECTION</span>
+        <span class="inspection-tag__seal">✓</span>
+      </div>
+      <dl class="inspection-tag__rows">
+        <div><dt>Program</dt><dd>BSSE, Univ. of Lahore</dd></div>
+        <div><dt>Focus</dt><dd>Frontend Engineering</dd></div>
+        <div><dt>Stack</dt><dd>React / Firebase</dd></div>
+        <div><dt>Status</dt><dd class="pass">Roadworthy</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<div class="lane-divider" aria-hidden="true"><div class="lane-divider__line"></div></div>
+
+<!-- ===== PROJECTS ===== -->
+<section class="section" id="projects">
+  <div class="section__head">
+    <span class="sign-badge">EXIT 02 — PROJECTS</span>
+  </div>
+
+  <div class="tags">
+
+    <article class="tag-card tag-card--featured">
+      <div class="tag-card__punch"></div>
+      <div class="tag-card__stamp">FYP</div>
+      <span class="tag-card__no">NO. 01</span>
+      <h3>IVVSP Web Dashboard</h3>
+      <p>
+        Frontend for an Intelligent Vehicle Verification &amp;
+        Surveillance Platform. Role-based routing for super admin, zone
+        admin, and officer accounts, animated real-time dashboards, and
+        live visual simulations of verification events — developed
+        against mock auth so frontend work could proceed independently
+        of the backend team.
+      </p>
+      <ul class="tag-card__stack">
+        <li>React</li><li>Vite</li><li>Ant Design</li><li>Zustand</li>
+      </ul>
+      <div class="tag-card__links">
+        <a href="#">Repository →</a>
+        <a href="#">Case study →</a>
+      </div>
+    </article>
+
+    <article class="tag-card">
+      <div class="tag-card__punch"></div>
+      <div class="tag-card__stamp">TASK 1</div>
+      <span class="tag-card__no">NO. 02</span>
+      <h3>Landscapes — Image Gallery</h3>
+      <p>
+        A cataloged image gallery of Pakistan's landscapes with category
+        filters, a full lightbox viewer with keyboard and next/prev
+        navigation, and smooth hover transitions.
+      </p>
+      <ul class="tag-card__stack">
+        <li>HTML</li><li>CSS</li><li>JavaScript</li>
+      </ul>
+      <div class="tag-card__links">
+        <a href="projects/Task 1 (Image Gallery)/index.html" target="_blank">Live demo →</a>
+      </div>
+    </article>
+
+    <article class="tag-card">
+      <div class="tag-card__punch"></div>
+      <div class="tag-card__stamp">TASK 2</div>
+      <span class="tag-card__no">NO. 03</span>
+      <h3>Reckoner — Desk Calculator</h3>
+      <p>
+        A desk-calculator-styled arithmetic app with a running tape,
+        keyboard support, backspace/percent functions, and real-time
+        result display.
+      </p>
+      <ul class="tag-card__stack">
+        <li>HTML</li><li>CSS</li><li>JavaScript</li>
+      </ul>
+      <div class="tag-card__links">
+        <a href="projects/Task 2 (Calculator)/index.html" target="_blank">Live demo →</a>
+      </div>
+    </article>
+
+   <article class="tag-card tag-card--featured">
+  <div class="tag-card__punch"></div>
+  <span class="tag-card__no">NO. 04</span>
+  <h3>Collabin — Growth &amp; User Acquisition Strategy</h3>
+  <p>
+    A creator-acquisition case study for a two-sided marketplace —
+    argued for targeting the supply side first, then designed a full
+    outreach system (DM, WhatsApp, and email scripts, objection
+    handling, and a referral loop) against a PKR 50,000 budget and a
+    3-week window, with a defined activation metric and a plan to
+    guard against quality dilution as volume scales.
+  </p>
+  <ul class="tag-card__stack">
+    <li>Growth Strategy</li><li>Cold Outreach</li><li>Marketplace</li>
+  </ul>
+  <div class="tag-card__links">
+    <a href="Growth & User Acquisition Challenge (Solution).pdf">View case study →</a>
+    <a href="Flyer - Join Collabin now.png">Flyer →</a>
+  </div>
+</article>
+
+  </div>
+</section>
+
+<div class="lane-divider" aria-hidden="true"><div class="lane-divider__line"></div></div>
+
+<!-- ===== SKILLS ===== -->
+<section class="section" id="skills">
+  <div class="section__head">
+    <span class="sign-badge">EXIT 03 — SKILLS</span>
+  </div>
+
+  <div class="studs">
+    <div class="studs__col">
+      <h3><span class="stud-dot"></span>Frontend</h3>
+      <div class="stud-row">
+        <span class="stud">React</span><span class="stud">Vite</span>
+        <span class="stud">Ant Design</span><span class="stud">Zustand</span>
+        <span class="stud">JavaScript</span><span class="stud">HTML/CSS</span>
+      </div>
+    </div>
+    <div class="studs__col">
+      <h3><span class="stud-dot"></span>Mobile</h3>
+      <div class="stud-row">
+        <span class="stud">Java</span><span class="stud">Android Studio</span>
+        <span class="stud">Firebase Auth</span><span class="stud">Firestore</span>
+      </div>
+    </div>
+    <div class="studs__col">
+      <h3><span class="stud-dot"></span>Tools</h3>
+      <div class="stud-row">
+        <span class="stud">Git</span><span class="stud">GitHub</span>
+        <span class="stud">Figma</span><span class="stud">REST APIs</span>
+      </div>
+    </div>
+    <div class="studs__col">
+      <h3><span class="stud-dot"></span>Learning now</h3>
+      <div class="stud-row">
+        <span class="stud stud--dashed">WebSockets</span>
+        <span class="stud stud--dashed">Design systems</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="lane-divider" aria-hidden="true"><div class="lane-divider__line"></div></div>
+
+<!-- ===== CONTACT ===== -->
+<section class="section section--contact" id="contact">
+  <div class="section__head">
+    <span class="sign-badge">EXIT 04 — CONTACT</span>
+  </div>
+
+  <div class="ticket">
+    <div class="ticket__main">
+      <p class="ticket__eyebrow">BOARDING PASS · NEXT OPPORTUNITY</p>
+      <h3>Open to frontend &amp; UI/UX internships</h3>
+      <p class="ticket__lead">
+        Email's the fastest way to reach me — I usually reply within a
+        day.
+      </p>
+      <div class="ticket__rows">
+        <a href="mailto:areebahmushtaq123@gmail.com" class="ticket__row">
+          <span class="label">Email</span>
+          <span class="value">areebahmushtaq123@gmail.com</span>
+        </a>
+        <a href="https://github.com/Areebah56" target="_blank" rel="noopener" class="ticket__row">
+          <span class="label">GitHub</span>
+          <span class="value">github.com/Areebah56</span>
+        </a>
+        <a href="https://www.linkedin.com/in/areebah-mushtaq-53ab872b3/" target="_blank" rel="noopener" class="ticket__row">
+          <span class="label">LinkedIn</span>
+          <span class="value">https://www.linkedin.com/in/areebah-mushtaq-53ab872b3/</span>
+        </a>
+      </div>
+    </div>
+    <div class="ticket__perf" aria-hidden="true"></div>
+    <div class="ticket__stub">
+      <span class="ticket__stub-label">FROM</span>
+      <span class="ticket__stub-big">LHR</span>
+      <span class="ticket__stub-label">SEAT</span>
+      <span class="ticket__stub-mid">FRONTEND · 01</span>
+      <span class="ticket__stub-label">GATE</span>
+      <span class="ticket__stub-mid">OPEN</span>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <span class="plate-chip plate-chip--sm">AB</span>
+  <span>© <span id="year"></span> Areebah. Built with HTML, CSS &amp; JS.</span>
+  <a href="#top" class="footer__top">Back to top ↑</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

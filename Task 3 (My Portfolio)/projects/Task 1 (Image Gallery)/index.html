@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Landscapes — A Field Gallery</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <p class="eyebrow">Specimen Catalog · Est. 2026</p>
+    <h1>The Landscapes of Pakistan</h1>
+    <p class="subhead">A field gallery of landscapes, cataloged by beauty.</p>
+  </header>
+
+  <nav class="filters" aria-label="Filter gallery by category">
+    <button class="filter-btn active" data-filter="all">All Landscapes</button>
+    <button class="filter-btn" data-filter="mountain">Mountain</button>
+    <button class="filter-btn" data-filter="lake">Lake</button>
+    <button class="filter-btn" data-filter="valley">Valley</button>
+    <button class="filter-btn" data-filter="desert">Desert</button>
+  </nav>
+
+  <main class="gallery" id="gallery">
+    <!-- Gallery items are injected by script.js from the imageData array -->
+  </main>
+
+  <footer class="site-footer">
+    <p>Click any landscape for more information.</p>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+    <div class="lightbox-content">
+      <button class="lb-close" id="lbClose" aria-label="Close viewer">&times;</button>
+      <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous image">&#8592;</button>
+
+      <figure class="lb-figure">
+        <div class="lb-img-wrap" id="lbImgWrap">
+          <img id="lbImage" src="" alt="" />
+          <figcaption class="lb-caption">
+            <div class="lb-caption-top">
+              <span class="lb-tag" id="lbTag"></span>
+              <span class="lb-title" id="lbTitle"></span>
+              <span class="lb-count" id="lbCount"></span>
+            </div>
+            <p class="lb-desc" id="lbDesc"></p>
+          </figcaption>
+        </div>
+      </figure>
+
+      <button class="lb-nav lb-next" id="lbNext" aria-label="Next image">&#8594;</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
