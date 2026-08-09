@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reckoner — Desk Calculator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="desk">
+    <div class="calculator" id="calculator">
+
+      <div class="plaque">
+        <span class="brand">RECKONER</span>
+        <span class="model">MODEL&nbsp;CA-2</span>
+      </div>
+
+      <div class="tape-window">
+        <div class="tape" id="tape" aria-live="off"></div>
+      </div>
+
+      <div class="display-unit">
+        <div class="display-prev" id="prevOperand"></div>
+        <div class="display-current" id="currentOperand">0</div>
+      </div>
+
+      <div class="keys">
+        <button class="key key-fn" data-action="clear">C</button>
+        <button class="key key-fn" data-action="backspace">⌫</button>
+        <button class="key key-fn" data-action="percent">%</button>
+        <button class="key key-op" data-action="operator" data-op="÷">÷</button>
+
+        <button class="key key-num" data-action="number" data-num="7">7</button>
+        <button class="key key-num" data-action="number" data-num="8">8</button>
+        <button class="key key-num" data-action="number" data-num="9">9</button>
+        <button class="key key-op" data-action="operator" data-op="×">×</button>
+
+        <button class="key key-num" data-action="number" data-num="4">4</button>
+        <button class="key key-num" data-action="number" data-num="5">5</button>
+        <button class="key key-num" data-action="number" data-num="6">6</button>
+        <button class="key key-op" data-action="operator" data-op="−">−</button>
+
+        <button class="key key-num" data-action="number" data-num="1">1</button>
+        <button class="key key-num" data-action="number" data-num="2">2</button>
+        <button class="key key-num" data-action="number" data-num="3">3</button>
+        <button class="key key-op" data-action="operator" data-op="+">+</button>
+
+        <button class="key key-num key-zero" data-action="number" data-num="0">0</button>
+        <button class="key key-num" data-action="decimal">.</button>
+        <button class="key key-eq" data-action="equals">=</button>
+      </div>
+    </div>
+
+    <p class="hint">Type numbers · use + − × ÷ · Enter for = · Esc to clear</p>
+  </main>
+
+<script src="script.js"></script>
+</body>
+</html>
